@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="todo">
+        <h3>Todo</h3>
+        <div id="generatetask1">
+          <div class="box">Todo #1</div>
+          <div class="box">Todo #1</div>
+        </div>
+        <bit class="add" id="newtask" onclick="generateModal1()"
+          ><i class="fa-solid fa-file-circle-plus"></i>add a task</bit
+        >
+      </div>
+      <div class="inprogres">
+        <h3>In Progress</h3>
+        <div id="generatetask2"></div>
+        <bit class="add" id="newtask" onclick="generateModal2()"
+          ><i class="fa-solid fa-file-circle-plus"></i>add a task</bit
+        >
+      </div>
+      <div class="done">
+        <h3>Done</h3>
+        <div id="generatetask3"></div>
+        <bit class="add" id="newtask" onclick="generateModal3()"
+          ><i class="fa-solid fa-file-circle-plus"></i>add a task</bit
+        >
+      </div>
+    </div>
+
+    <!--        Modal1       -->
+    <div class="modal1 modal">
+      <div class="modalinput">
+        <input id="contact1" type="text" placeholder="add a task" />
+        <button onclick="generateTask1()">add</button>
+      </div>
+    </div>
+    <!--        Modal2       -->
+    <div class="modal2 modal">
+      <div class="modalinput">
+        <input id="contact2" type="text" placeholder="add a task" />
+        <button onclick="generateTask2()">add</button>
+      </div>
+    </div>
+    <!--        Modal3       -->
+    <div class="modal3 modal">
+      <div class="modalinput">
+        <input id="contact3" type="text" placeholder="add a task" />
+        <button onclick="generateTask3()">add</button>
+      </div>
+    </div>
+  </body>
+  <script src="./main.js"></script>
+</html>

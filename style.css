@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,100;1,200;1,300;1,400&display=swap");
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0;
+}
+
+.todo {
+  width: 150px;
+  min-height: 100px;
+  color: white;
+  background-color: rgb(48, 45, 45);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.todo h3 {
+  padding: 0 8px;
+  color: white;
+  background-color: blue;
+  margin: 0;
+}
+
+.inprogres {
+  width: 150px;
+  min-height: 100px;
+  color: white;
+  background-color: rgb(48, 45, 45);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.inprogres h3 {
+  padding: 0 8px;
+  color: white;
+  background-color: orange;
+  margin: 0;
+}
+
+.done {
+  width: 150px;
+  min-height: 100px;
+  color: white;
+  background-color: rgb(48, 45, 45);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.done h3 {
+  padding: 0 8px;
+  color: white;
+  background-color: green;
+  margin: 0;
+}
+
+.add {
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: rgb(36, 30, 30);
+  font-family: "Poppins", sans-serif;
+}
+
+#generatetask1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 8px 5px;
+}
+#generatetask2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding: 8px 5px;
+}
+#generatetask3 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding: 8px 5px;
+}
+.box {
+  width: 120px;
+  height: 40px;
+  background-color: rgb(36, 30, 30);
+  padding: 5px;
+}
+
+/*          modal             */
+
+.modal {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  display: none;
+  width: 250px;
+  margin-left: 500px;
+}
+
+.modalinput {
+  border: 1px solid #e7e7e7;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: white;
+}
+
+.modalinput input {
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+
+.modalinput button {
+  border: 1px solid #e7e7e7;
+  border-radius: 5px;
+  padding: 5px;
+}
